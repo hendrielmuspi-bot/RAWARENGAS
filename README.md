@@ -1,14 +1,30 @@
-# RAWARENGAS-MAJU
+# Website Desa (React + GitHub Pages)
 
-Repository untuk pengelolaan project Desa Rawarengas.  
-Di sini akan disimpan file, dokumen, dan kode terkait sistem digitalisasi desa.
+Website desa sederhana berbasis React. Siap di-deploy ke GitHub Pages.
 
-## Struktur
-- 📂 Dokumen
-- 📂 Sistem Aplikasi
-- 📂 Data Pendukung
+## Cara menjalankan lokal
+```bash
+npm install
+npm start
+```
 
-## Kontribusi
-1. Upload file yang relevan ke folder masing-masing
-2. Gunakan nama file yang jelas
-3. Update README bila ada perubahan besar
+## Deploy ke GitHub Pages
+1. Edit `package.json` → ganti `username` pada `homepage` dengan username GitHub kamu.
+2. Inisialisasi repo dan push ke GitHub:
+```bash
+git init
+git add .
+git commit -m "init"
+git branch -M main
+git remote add origin https://github.com/username/desa-website.git
+git push -u origin main
+```
+3. Deploy:
+```bash
+npm run deploy
+```
+4. Akses: `https://username.github.io/desa-website`
+
+## Kustomisasi
+- Edit konten di folder `src/pages/`
+- Ganti nama desa, kontak, dan isi halaman sesuai data asli.
